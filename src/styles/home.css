@@ -1,0 +1,141 @@
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.task-form {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form button {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 500px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-form input[type="text"],
+.task-form textarea {
+  background-color: #fafafa;
+  font-size: 1em;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.task-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.task-form button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.task-list {
+  margin-top: 30px;
+}
+
+.task-list .task-item {
+  margin-bottom: 25px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.loader-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.task-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.filter, .sort {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter label, .sort label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.filter select, .sort select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter select:focus, .sort select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
